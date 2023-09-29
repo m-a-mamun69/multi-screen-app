@@ -27,6 +27,12 @@ class HomeRoute extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  padding:
+                  const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle:
+                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
               child: const Text('Go To Page One!'),
               onPressed: () {
                 Navigator.pushNamed(context, '/second');
@@ -37,6 +43,12 @@ class HomeRoute extends StatelessWidget {
               height:50,
             ),// ElevatedButton
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  padding:
+                  const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle:
+                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
               child: const Text('Go To Page Two!'),
               onPressed: () {
                 Navigator.pushNamed(context, '/third');
@@ -61,6 +73,12 @@ class SecondRoute extends StatelessWidget {
       ), // AppBar
       body: Center(
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+              padding:
+              const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              textStyle:
+              const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           onPressed: () {
             Navigator.pop(context);
           },
